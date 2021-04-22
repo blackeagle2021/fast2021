@@ -10,11 +10,11 @@
   <script>
     function usrpas(){
       
-      var myObj = JSON.parse(window.location="https://fast2021.000webhostapp.com/login.php?imeico="+document.form1.imei.value);
-          
-      
-      
-      console.log(myObj[1]);
+      $(document).ready(function () {
+    $.getJSON('https://fast2021.000webhostapp.com/login.php?imeico='+document.form1.imei.value, function (response) {
+        console.log(JSON.stringify(response));
+    });
+});
       }
     
       
