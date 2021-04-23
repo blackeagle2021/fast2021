@@ -18,7 +18,10 @@
         $.each(response.datos,function(id,valor){console.log(valor['nombre'])});
     });
 });
-      }
+      
+    document.getElementById('label').innerHTML = valor['nombre'];
+    
+    }
     
       
 
@@ -36,6 +39,9 @@
     <input type="text" name="placa"> placa<br>
     <input type="button" value="ir a.." onclick="usrpas()">
     </form>   
-</body>
+
+    <label>Click me type="text" id="label" name="label" /></label>
+    
+    </body>
 </html>
 
