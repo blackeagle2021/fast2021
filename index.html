@@ -18,7 +18,7 @@
         $.each(response.datos,function(id,valor){ var im=valor['imeico'];
                                                   var p=valor['clave'];
                                                 
-                                                if ((document.form1.imei.value == im)&&(document.form1.pass.value == im)) {
+                                                if ((document.form1.imei.value == im)&&(document.form1.pass.value == p)) {
                                                 document.getElementById('etiqueta').innerHTML = valor['nombre'];
                                                 document.getElementById('etiqueta1').innerHTML = valor['placa'];
 } else alert("datos erroneos"); 
