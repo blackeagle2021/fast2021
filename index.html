@@ -15,7 +15,6 @@
       $(document).ready(function () {
     $.getJSON('https://fast2021.000webhostapp.com/login.php?imeico='+document.form1.imei.value, function (response) {
         console.log(JSON.stringify(response));
-        console.log(response.datos.nombre);
         $.each(response.datos,function(id,valor){console.log(id+" "+valor)});
     });
 });
