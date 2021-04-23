@@ -17,7 +17,7 @@
         console.log(JSON.stringify(response));
         $.each(response.datos,function(id,valor){console.log(valor['nombre'])
                                                 document.getElementById('etiqueta').innerHTML = valor['nombre'];
-                                                
+                                                document.getElementById('etiqueta1').innerHTML = valor['placa'];
                                                 
                                                 });
     
@@ -43,12 +43,12 @@
     <form  name="form1">
     <input type="text" name="imei"> INGRESE EL IMEI DE SU CELULAR<br>
     <input type="text" name="clave"> INGRESE SU CLAVE<br>
-    <input type="button" value="ir a.." onclick="usrpas()">
+    <input type="button" value="INGRESAR AL SISTEMA" onclick="usrpas()">
     </form>   
     <hr>
     <p></p>
     <label >NOMBRE DEL CONDUCTOR:</label> &nbsp <label id="etiqueta"></label>
-    
+    <label >PLACA:</label> &nbsp <label id="etiqueta1"></label>
     </body>
 </html>
 
